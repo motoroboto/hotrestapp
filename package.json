@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/motoroboto/hotrestapp/issues"
   },
-  "homepage": "https://github.com/motoroboto/hotrestapp#readme"
+  "homepage": "https://github.com/motoroboto/hotrestapp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
