@@ -9,33 +9,31 @@ const tables = require("./tables");
 var reservedTables = [];
 var waitlist = [];
 
-// Routes 
+// Routes
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.get("/tables", function (req, res) {
-    res.sendFile(path.join(__dirname, "tables-page.html"));
+  res.sendFile(path.join(__dirname, "tables-page.html"));
 });
 
 app.get("/reserve", function (req, res) {
-    res.sendFile(path.join(__dirname, "reservation-form.html"));
+  res.sendFile(path.join(__dirname, "reservation-form.html"));
 });
 
-app.get('/api/tables', function (req, res) {
-    console.log('body:', req.body)
-    return res.json(tables);
+app.get("/api/tables", function (req, res) {
+  console.log("body:", req.body);
+  return res.json(tables);
 });
 
-app.post('/api/tables'), function (req, res) {
-    var newTable = req.body;
-    newTable.customerName = newTable.name
-    newTable.phoneNumber = newTable.phoneNumber
-    newTable.customerEmail = newTable.email
-    newTable.customerId = newtable.id
-    res.json(newTable);
-};
+app.post("/api/tables", (req, res) => {
+  let newTable = req.body;
+  console.log("body:", newTable);
+  res.json(newTable);
+  //   res.sendStatus(200);
+});
 
 app.listen(PORT, function () {
-    console.log('app listening on PORT' + PORT);
+  console.log("app listening on PORT" + PORT);
 });
