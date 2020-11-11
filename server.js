@@ -29,9 +29,9 @@ app.get("/api/tables", function (req, res) {
 
 app.post("/api/tables", (req, res) => {
   let newTable = req.body;
-  console.log("body:", newTable);
+  tables.push(newTable);
   res.json(newTable);
-  //   res.sendStatus(200);
+  console.log("body:", tables);
 });
 
 app.listen(PORT, function () {
