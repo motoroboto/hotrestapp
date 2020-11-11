@@ -1,0 +1,26 @@
+[
+    {
+        "customerName": "Bart Charles Cusick",
+        "phoneNumber": "9196734578",
+        "customerEmail": "bartcusick@hotmail.com",
+        "customerID": "bart"
+    },
+    {
+        "customerName": "test",
+        "phoneNumber": "123456789",
+        "customerEmail": "test@gmail.com",
+        "customerID": "123456789"
+    },
+    {
+        "customerName": "Paul Hagwood",
+        "phoneNumber": "9194147675",
+        "customerEmail": "pmhagwood@gmail.com",
+        "customerID": "1"
+    },
+    {
+        "customerName": "Crawford Smith",
+        "phoneNumber": "7031234567",
+        "customerEmail": "crawford@gmail.com",
+        "customerID": "crawg"
+    }
+]
